@@ -26,13 +26,14 @@ public class AnnotationGreetingServiceImpl implements GreetingService {
     @Override
     public String greeting(String name) {
         System.out.println("provider received invoke of greeting: " + name);
-        sleepWhile();
+        //sleepWhile();
         return "Annotation, greeting " + name;
     }
 
+    @Override
     public String replyGreeting(String name) {
         System.out.println("provider received invoke of replyGreeting: " + name);
-        sleepWhile();
+        //sleepWhile();
         return "Annotation, fine " + name;
     }
 
